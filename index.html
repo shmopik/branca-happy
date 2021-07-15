@@ -1,11 +1,1410 @@
 <html>
-  <head></head>
-  <body>
-    <div>
-      Branca Happy Hour
-    </div>
-    <div style="overflw: hidden;">
-      <img src="./menu-happy.png" style="width: 300%;transform: translate(-66%,0px);">
-    </div>
-  </body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background: white;
+                color: black;
+                font-family: Heebo,serif;
+            }
+
+            .group{
+                margin: 64px 16px 48px 16px;
+            }
+
+            .group:last-child{
+                margin-bottom: 0;
+            }
+
+            .header{
+                background: black;
+                color: white;
+                font-size: 48px;
+                text-align: right;
+                padding: 0 12px;
+                font-weight: 500;
+            }
+
+            .group-container{
+                display: flex;
+                direction: rtl;
+                margin-top:18px;
+            }
+
+            .group-header{
+                background: #f7b400;
+                padding: 8px 0;
+            }
+
+            .group-header.medium{
+                background: #f9c533;
+            }
+
+            .group-header.light{
+                background: #fad266;
+            }
+
+            .group-header-text{
+                writing-mode: vertical-lr;
+                color: black;
+                transform: rotate(180deg);
+                line-height: 36px;
+                font-size: 36px;
+                font-weight: 500;
+            }
+
+            .items-container{
+                flex-grow: 1;
+                margin: 0 12px;
+            }
+
+            .item{
+                display: flex;
+                justify-content: space-between;
+                font-size: 36px;
+                margin-bottom: 12px;
+            }
+
+            .item-description{
+                font-size: 30px;
+                margin-top: -12px;
+            }
+
+            .item-extra{
+                font-size: 30px;
+                margin-top: -6px;
+                font-weight: bold;
+            }
+
+            .main-description{
+                font-weight: 600;
+            }
+
+            .comment{
+                font-size: 18px;
+                margin: 16px;
+                direction: rtl;
+            }
+
+            .item-title{
+                display: flex;
+            }
+
+            .vegeterian{
+                background-image: url("./vegeterian-dark.png");
+                width: 36px;
+                height: 36px;
+                margin-right: 12px;
+                background-size: 100%;
+                position: relative;
+                top: 6px;
+            }
+
+            .spicy{
+                background-image: url("./spicy-dark.png");
+                width: 36px;
+                height: 36px;
+                margin-right: 12px;
+                background-size: 100%;
+                position: relative;
+                top: 6px;
+            }
+
+            .whatsapp{
+                background-image: url("./whatsapp.png");
+                width: 60px;
+                height: 60px;
+                background-size: 100%;
+            }
+
+            .instagram{
+                background-image: url("./instagram.png");
+                width: 60px;
+                height: 60px;
+                background-size: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="margin: 64px 0 24px 0">
+            <img src="./happy-header.png" style="width:100%">
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 0 110px;">
+            <div style="display: flex;align-items: center">
+                <div class="instagram"></div>
+                <div style="font-size: 36px; margin-left: 20px">@brancabartlv</div>
+            </div>
+            <div style="display: flex;align-items: center">
+                <div class="whatsapp"></div>
+                <div style="font-size: 36px; margin-left: 20px">054-586-9430</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="group">
+                <div class="header">ויסקי</div>
+                <div class="group-container">
+                    <div class="group-header light">
+                        <div class="group-header-text">אירי</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>טולומור דיו</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ג'יימסון</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-container">
+                    <div class="group-header medium">
+                        <div class="group-header-text">אמריקאי</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>וילד טרקי 81</div>
+                            <div>
+                                <span>22</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מייקרס מארק</div>
+                            <div>
+                                <span>23</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>בולט שיפון</div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ג'ק דניאלס</div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ג'נטלמן ג'ק</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>וודפורד רזרב</div>
+                            <div>
+                                <span>32</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-container">
+                    <div class="group-header">
+                        <div class="group-header-text">סינגל מאלט</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>גלנפידיך 12</div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>אוחנטושן אמריקן אוק</div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מונקי שולדר בלנדד מאלט</div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>סינגלטון</div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>גלנליווט</div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>גלנמורנג'י 10</div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מונקי שולדר סמוקי מונקי</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>בלוויני 12</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>לאפרויג סלקט</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>טליסקר 10</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>גלנגוין 10</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מקלן 12</div>
+                            <div>
+                                <span>35</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="header">וודקה</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>סטולי</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>זוברובקה</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>קטל 1</div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>קטל 1 ציטרון</div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>גרייגוס</div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="header">אניס</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>ערק עלית</div>
+                            <div>
+                                <span>16</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>אוזו מטקסה</div>
+                            <div>
+                                <span>16</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="header">ג'ין</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>היימנס</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מילק אנד האני</div>
+                            <div>
+                                <span>23</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>בומביי</div>
+                            <div>
+                                <span>23</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>בולס ג'ניבר</div>
+                            <div>
+                                <span>23</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>הנדריקס</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>טנקרי 10</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="header">טקילה</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>מילגרו סילבר</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>דון חוליו בלאנקו</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מזקל וידה</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>פטרון רפוסדו</div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>פטרון רוקה</div>
+                            <div>
+                                <span>29</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מילגרו סלקטד בלאנקו</div>
+                            <div>
+                                <span>29</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מילגרו סלקטד אנייחו</div>
+                            <div>
+                                <span>34</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="header">רום</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>בקארדי לבן</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>סיילור ג'רי</div>
+                            <div>
+                                <span>22</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>קפטן מורגן ספייס</div>
+                            <div>
+                                <span>22</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>בקרדי 8</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>פלנטיישן אננס</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>זקאפה 23</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="header">ברנדי</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>מטקסה 5 כוכבים</div>
+                            <div>
+                                <span>22</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>קלבדוס שאטו דו בריי</div>
+                            <div>
+                                <span>23</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>הנסי VS</div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>רמי מרטן VSOP</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>רמי מרטן 1738</div>
+                            <div>
+                                <span>33</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="header">דג'סטיף</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>בחרובקה</div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ייגרמייסטר</div>
+                            <div>
+                                <span>22</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>פרנה ברנקה</div>
+                            <div>
+                                <span>22</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>שרטרז ירוק</div>
+                            <div>
+                                <span>27</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="header">אפריטיף</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>מרטיני ביאנקו</div>
+                            <div>
+                                <span>16</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מרטיני רוסו</div>
+                            <div>
+                                <span>16</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מרטיני אקטרה דריי</div>
+                            <div>
+                                <span>16</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>אפרול</div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>קמפרי</div>
+                            <div>
+                                <span>20</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ודטה 52 ביאנקו</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ודטה 52 רוסו</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ודטה 52 אקטרה דריי</div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ודטה 52 ביטר אפריטיף</div>
+                            <div>
+                                <span>23</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <span>*תוספת שתייה קלה 4</span>
+            <span>&#8362</span>
+        </div>
+        <div class="section">
+            <div class="group">
+                <div class="header">בירות</div>
+                <div class="group-container">
+                    <div class="group-header">
+                        <div class="group-header-text">חבית</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>
+                                <div>בקס</div>
+                                <div class="item-description">
+                                    <span class="main-description">לאגר בהירה</span>
+                                    <span>גרמניה, 5%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                                <span>/</span>
+                                <span>16</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>באדוויזר</div>
+                                <div class="item-description">
+                                    <span class="main-description">לאגר בהירה</span>
+                                    <span>ארה"ב, 5%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>19</span>
+                                <span>&#8362</span>
+                                <span>/</span>
+                                <span>17</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>מלכה אדמונית</div>
+                                <div class="item-description">
+                                    <span class="main-description">פייל אייל</span>
+                                    <span>ישראל, 5.5%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>20</span>
+                                <span>&#8362</span>
+                                <span>/</span>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-container">
+                    <div class="group-header light">
+                        <div class="group-header-text">בקבוק</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>
+                                <div>גולדסטאר</div>
+                                <div class="item-description">
+                                    <span class="main-description">לאגר כהה</span>
+                                    <span>ישראל, 4.9%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>15</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>קורונה</div>
+                                <div class="item-description">
+                                    <span class="main-description">לאגר בהירה</span>
+                                    <span>מקיסקו, 4.6%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>ויינשטפן</div>
+                                <div class="item-description">
+                                    <span class="main-description">חיטה לא מסוננת</span>
+                                    <span>גרמניה, 5.4%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>19</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>ליפמנס</div>
+                                <div class="item-description">
+                                    <span class="main-description">בלגית פירותית</span>
+                                    <span>בלגיה, 4.2%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>20</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>מלכה בהירה</div>
+                                <div class="item-description">
+                                    <span class="main-description">בלונד אייל</span>
+                                    <span>ישראל, 6.5%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>20</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>ברודוג פאנק</div>
+                                <div class="item-description">
+                                    <span class="main-description">IPA</span>
+                                    <span>סקוטלנד, 5.6%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>22</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>המתססה</div>
+                                <div class="item-description">
+                                    <span class="main-description">סיידר תפוחים</span>
+                                    <span>ישראל, 7%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="group">
+                <div class="header">יינות</div>
+                <div class="group-container">
+                    <div class="group-header light">
+                        <div class="group-header-text">לבן</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>
+                                <div>פינקה לאס מוראס</div>
+                                <div class="item-description">
+                                    <span class="main-description">שרדונה</span>
+                                    <span>סאן חואן, ארגנטינה</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>ואכטנבורג וינצר</div>
+                                <div class="item-description">
+                                    <span class="main-description">גוורצטרמינר</span>
+                                    <span>פאלץ, גרמניה</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>וילה מריה</div>
+                                <div class="item-description">
+                                    <span class="main-description">סוביניון בלאן</span>
+                                    <span>מרלבורו, ניו זילנד</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>22</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>לה קציאטורה</div>
+                                <div class="item-description">
+                                    <span class="main-description">פינו גריג'יו</span>
+                                    <span>לומברדי, איטליה</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>21</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>מסע ישראלי לבן</div>
+                                <div class="item-description">
+                                    <span class="main-description">גרנאש, יונייה וקולומבר</span>
+                                    <span>ויתקין, ישראל</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>ברוט דרז'אן</div>
+                                <div class="item-description">
+                                    <span class="main-description">שרדונה מבעבע</span>
+                                    <span>יורה, צרפת</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>20</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-container">
+                    <div class="group-header medium">
+                        <div class="group-header-text">רוזה</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>
+                                <div>פול מאס</div>
+                                <div class="item-description">
+                                    <span class="main-description">רוזה סירה</span>
+                                    <span>פאי דוק, צרפת</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>20</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-container">
+                    <div class="group-header">
+                        <div class="group-header-text">אדום</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>
+                                <div>פינקה לאס מוראס</div>
+                                <div class="item-description">
+                                    <span class="main-description">קברנה סוביניון</span>
+                                    <span>סאן חואן, ארגנטינה</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>סיניוריו דה לאס ויניאס</div>
+                                <div class="item-description">
+                                    <span class="main-description">טמפרניו</span>
+                                    <span>ריוחה קריאנזה, ספרד</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>מסע ישראלי אדום</div>
+                                <div class="item-description">
+                                    <span class="main-description">קריניאן, סירה וגרנאש</span>
+                                    <span>ויתקין, ישראל</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>24</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="group">
+                <div class="header">קוקטיילים</div>
+                <div class="group-container">
+                    <div class="group-header light">
+                        <div class="group-header-text">אפריטיבו</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>
+                                <div>אמריקנו</div>
+                                <div class="item-description">
+                                    <span class="main-description">קמפרי</span>
+                                    <span>ורמוט רוסו, סודה</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>אפרול שפריץ</div>
+                                <div class="item-description">
+                                    <span class="main-description">פרוסקו</span>
+                                    <span>אפרול, תפוז</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>רומבה</div>
+                                <div class="item-description">
+                                    <span class="main-description">בקרדי 8</span>
+                                    <span>ליקר קפה, טוניק</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>הוגו שפריץ</div>
+                                <div class="item-description">
+                                    <span class="main-description">פרוסקו</span>
+                                    <span>ליקר ליצ'י, נענע, לימון</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>בליני פסיפלורה</div>
+                                <div class="item-description">
+                                    <span class="main-description">פרוסקו</span>
+                                    <span>פסואה, סירופ פסיפלורה</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>סנגריטה לבנה</div>
+                                <div class="item-description">
+                                    <span class="main-description">סוביניון בלאן</span>
+                                    <span>רום לבן, סאוור</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>סנגריטה אדומה</div>
+                                <div class="item-description">
+                                    <span class="main-description">ריוחה</span>
+                                    <span>ברנדי, סאוור</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-container">
+                    <div class="group-header">
+                        <div class="group-header-text">קוקטיילים של ערב</div>
+                    </div>
+                    <div class="items-container">
+                        <div class="item">
+                            <div>
+                                <div>רוזטה</div>
+                                <div class="item-description">
+                                    <span class="main-description">ערק</span>
+                                    <span>רוזטה, סאוור</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>מייד אין ברנקה</div>
+                                <div class="item-description">
+                                    <span class="main-description">ג'ין</span>
+                                    <span>סאוור, בזיליקום, נענע, מלפפון</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>צ'ילי ליצ'י</div>
+                                <div class="item-description">
+                                    <span class="main-description">וודקה</span>
+                                    <span>ליקר ליצ'י, סאוור, ליצ'י, נענע, צ'ילי חריף</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>נגרוני ישראלי</div>
+                                <div class="item-description">
+                                    <span class="main-description">ג'ין</span>
+                                    <span>ורמוט ודטה, ביטר אפריטיף</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>מרגריטה קלאסית / חריפה</div>
+                                <div class="item-description">
+                                    <span class="main-description">טקילה</span>
+                                    <span>ליקר תפוזים, לימון</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div>מאי תאי</div>
+                                <div class="item-description">
+                                    <span class="main-description">רום לבן</span>
+                                    <span>רום פלנטיישן אננס, ליקר תפוזים, לימון</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="group">
+                <div class="header">שתייה קלה</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>קוקה קולה</div>
+                            <div>
+                                <span>10</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>קולה זירו</div>
+                            <div>
+                                <span>10</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ספרייט</div>
+                            <div>
+                                <span>10</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ג'ינג'ר ביר</div>
+                            <div>
+                                <span>10</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>ג'ינג'ר אייל</div>
+                            <div>
+                                <span>10</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>טוניק</div>
+                            <div>
+                                <span>10</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>סודה</div>
+                            <div>
+                                <span>10</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>מים מינרליים</div>
+                            <div>
+                                <span>10</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>סן פלגרינו</div>
+                            <div>
+                                <span>12</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="group">
+                <div class="header">נשנושים</div>
+                <div class="group-container">
+                    <div class="items-container">
+                        <div class="item">
+                            <div>
+                                <div>לאבנה</div>
+                                <div class="item-description">
+                                    <span>חלה, רסק עגבניות, זעתר, שמן זית</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>14</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="item-title">
+                                    <div>עלי גפן</div>
+                                    <div class="vegeterian"></div>
+                                </div>
+                                <div class="item-description">
+                                    <span>לבאנה, צנונית, זעתר, שמן זית</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>14</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="item-title">
+                                    <div>פלטת ירקות</div>
+                                    <div class="vegeterian"></div>
+                                </div>
+                                <div class="item-description">
+                                    <span>מוגש עם פטה או טחינה</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="item-title">
+                                    <div>נאצ'וס</div>
+                                    <div class="vegeterian"></div>
+                                    <div class="spicy"></div>
+                                </div>
+                                <div class="item-description">
+                                    <span>מוגש עם סלסת עגבניות</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>14</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="item-title">
+                                    <div>פלטת פינוקים</div>
+                                    <div class="vegeterian"></div>
+                                </div>
+                                <div class="item-description">
+                                    <span>חלה, זיתים, ארטישוק, טחינה וגבינת בושה</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>14</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="item-title">
+                                    <div>ברוסקטה</div>
+                                    <div class="vegeterian"></div>
+                                </div>
+                                <div class="item-description">
+                                    <span>עגבניות, בזיליקום, מוצרלה, בלסמי ושמן זית</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>16</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="item-title">
+                                    <div>פיצה טורטיה</div>
+                                    <div class="spicy"></div>
+                                </div>
+                                <div class="item-description">
+                                    <span>רוטב עגבניות, תערובת גבינות</span>
+                                </div>
+                                <div class="item-extra">
+                                    <span>תוספת מעדן אווז 4</span>
+                                    <span>&#8362</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>18</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="item-title">
+                                    <div>כריך מוצרלה</div>
+                                </div>
+                                <div class="item-description">
+                                    <span>עגבניות, רוקט, פסטו ובלסמי</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>26</span>
+                                <span>&#8362</span>
+                                <span>/</span>
+                                <span>14</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="item-title">
+                                    <div>כריך קורנדביף</div>
+                                    <div class="spicy"></div>
+                                </div>
+                                <div class="item-description">
+                                    <span>עגבניות, קורנישונים, ברביקיו, חרדל, מיונז ורוקט</span>
+                                </div>
+                                <div class="item-extra">
+                                    <span>תוספת גבינת בושה 7</span>
+                                    <span>&#8362</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span>28</span>
+                                <span>&#8362</span>
+                                <span>/</span>
+                                <span>16</span>
+                                <span>&#8362</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 80px">
+        </div>
+    </body>
 </html>
